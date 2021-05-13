@@ -11,19 +11,19 @@ import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import java.util.*
 import kotlin.collections.ArrayList
-import com.example.xo.databinding.ActivityMainBinding
+//import com.example.xo.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var but1: Button
-    lateinit var but2: Button
-    lateinit var but3: Button
-    lateinit var but4: Button
-    lateinit var but5: Button
-    lateinit var but6: Button
-    lateinit var but7: Button
-    lateinit var but8: Button
-    lateinit var but9: Button
+//    lateinit var but1: Button
+//    lateinit var but2: Button
+//    lateinit var but3: Button
+//    lateinit var but4: Button
+//    lateinit var but5: Button
+//    lateinit var but6: Button
+//    lateinit var but7: Button
+//    lateinit var but8: Button
+//    lateinit var but9: Button
 
     private var player1 = ArrayList<Int>()
     private var player2 = ArrayList<Int>()
@@ -37,15 +37,15 @@ class MainActivity : AppCompatActivity() {
             R.layout.activity_main
         )
 //
-        but1 = binding.button1
-        but2 = binding.button2
-        but3 = binding.button3
-        but4 = binding.button4
-        but5 = binding.button5
-        but6 = binding.button6
-        but7 = binding.button7
-        but8 = binding.button8
-        but9 = binding.button9
+//        but1 = binding.button1
+//        but2 = binding.button2
+//        but3 = binding.button3
+//        but4 = binding.button4
+//        but5 = binding.button5
+//        but6 = binding.button6
+//        but7 = binding.button7
+//        but8 = binding.button8
+//        but9 = binding.button9
 
 
     }
@@ -137,32 +137,32 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun AutoPlay() {
-        val emptyCells=ArrayList<Int>()
-        for (cellID in 1..9){
-            if(!(player1.contains(cellID) || player2.contains(cellID))){
-                emptyCells.add(cellID)
-            }
-        }
-
-        val r = Random()
-        val randIndex = r.nextInt(emptyCells.size-0)+0
-        val cellID = emptyCells[randIndex]
-
-        var buSelected:Button
-        when(cellID){
-            1->buSelected = but1
-            2-> buSelected= but2
-            3-> buSelected= but3
-            4-> buSelected= but4
-            5-> buSelected= but5
-            6-> buSelected= but6
-            7-> buSelected= but7
-            8-> buSelected= but8
-            9-> buSelected= but9
-            else -> buSelected = but1
-
-        }
-        playGame(cellID,buSelected)
-    }
+//    private fun AutoPlay() {
+//        val emptyCells=ArrayList<Int>()
+//        for (cellID in 1..9){
+//            if(!(player1.contains(cellID) || player2.contains(cellID))){
+//                emptyCells.add(cellID)
+//            }
+//        }
+//
+//        val r = Random()
+//        val randIndex = r.nextInt(emptyCells.size-0)+0
+//        val cellID = emptyCells[randIndex]
+//
+//        var buSelected:Button
+//        when(cellID){
+//            1->buSelected = but1
+//            2-> buSelected= but2
+//            3-> buSelected= but3
+//            4-> buSelected= but4
+//            5-> buSelected= but5
+//            6-> buSelected= but6
+//            7-> buSelected= but7
+//            8-> buSelected= but8
+//            9-> buSelected= but9
+//            else -> buSelected = but1
+//
+//        }
+//        playGame(cellID,buSelected)
+//    }
 }
